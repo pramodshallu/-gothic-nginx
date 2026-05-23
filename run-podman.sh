@@ -10,6 +10,6 @@ echo "🔨 Building Podman image..."
 podman build -t test-nginx:v1 .
 
 echo "🚀 Starting Nginx server..."
-podman run -d --name gothic-site -p 8080:8080 test-nginx:v1
+podman run -d --name gothic-site -p 8081:80 test-nginx:v1
 
-echo "✅ Success! Open http://localhost:8080 in your browser."
+echo "✅ Success! Open http://localhost:8081 in your browser."
